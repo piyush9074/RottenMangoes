@@ -1,0 +1,20 @@
+<div class="login-container">
+    <img class ="film" src="assets\imageput.png">
+    <div class="logo">UnrottenTomatoes</div>
+    <div class="desc">UnrottenTomatoes is an online database of information related to films, television series, podcasts, home videos, video games, and streaming content online – including cast, production crew and personal biographies, plot summaries, trivia, ratings, and fan and critical reviews</div>
+    <div class="login-form">
+        <div class="form-group">
+            <label for="uname">UserName</label>
+            <input type="text" class="form-control"  [(ngModel)]="userName">
+        </div>
+        <div class="form-group">
+            <label for="pwd">Password</label>
+            <input type="password" class="form-control" [(ngModel)]="password">
+        </div>
+        <div class="btn-container">
+            <div class="error">{{errMsg}}</div>
+            <button class="btn btn-dark" (click)="login()">Submit</button>
+        </div>
+        
+    </div>
+</div>
